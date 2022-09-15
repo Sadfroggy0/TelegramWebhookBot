@@ -12,13 +12,6 @@ import java.net.URL;
 public class Tgbot2Application {
 
     public static void main(String[] args) throws MalformedURLException {
-        URL url = new URL("https://www.stackabuse.com");
-        try {
-            HttpURLConnection connection =(HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         SpringApplication.run(Tgbot2Application.class, args);
     }

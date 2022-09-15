@@ -5,13 +5,7 @@ import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import ru.timofey.tgbot2.keyboard.Keyboard;
-
-import javax.print.DocFlavor;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 @Component
 public class MessageHandler {
@@ -32,6 +26,9 @@ public class MessageHandler {
             sendMessage.setText("Start command has been executed");
 
             return sendMessage;
+        }
+        else if(inputText.equals("Vacancies")){
+
         }
 
         sendMessage.setText(inputText);

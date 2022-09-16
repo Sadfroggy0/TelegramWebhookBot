@@ -3,7 +3,9 @@ package ru.timofey.tgbot2.vacancyEntities;
 public class Experience {
     private String id;
     private String name;
-    public Experience(){}
+
+    public Experience() {
+    }
 
     public Experience(String id, String name) {
         this.id = id;
@@ -24,5 +26,12 @@ public class Experience {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Experience{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

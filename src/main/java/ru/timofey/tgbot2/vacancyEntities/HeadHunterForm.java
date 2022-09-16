@@ -11,23 +11,16 @@ public class HeadHunterForm {
     private Area area;
     private Specializations specializations;
 
-    public HeadHunterForm(){
+    public HeadHunterForm() {
     }
 
-    public HeadHunterForm(Schedule schedule, Experience experience,
-                          Address address, int id, String alternate_url,
-                          Salary salary, Area area,
-                          Specializations specializations,String name) {
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
-        this.schedule = schedule;
-        this.experience = experience;
-        this.address = address;
-        this.id = id;
-        this.alternate_url = alternate_url;
-        this.salary = salary;
-        this.area = area;
-        this.specializations = specializations;
     }
 
     public Schedule getSchedule() {
@@ -93,4 +86,5 @@ public class HeadHunterForm {
     public void setSpecializations(Specializations specializations) {
         this.specializations = specializations;
     }
+
 }

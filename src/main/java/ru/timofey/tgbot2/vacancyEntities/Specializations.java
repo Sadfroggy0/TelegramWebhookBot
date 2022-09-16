@@ -6,7 +6,8 @@ public class Specializations {
     private int id;
     private String name;
 
-    public Specializations(){}
+    public Specializations() {
+    }
 
     public Specializations(int profarea_id, String profarea_name, int id, String name) {
         this.profarea_id = profarea_id;
@@ -45,5 +46,13 @@ public class Specializations {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Specializations{" +
+                "profarea_name='" + profarea_name + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

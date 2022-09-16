@@ -5,7 +5,9 @@ public class Salary {
     private int from;
     private String currency;
     private boolean gross;
-    public Salary(){}
+
+    public Salary() {
+    }
 
     public Salary(int to, int from, String currency, boolean gross) {
         this.to = to;
@@ -44,5 +46,14 @@ public class Salary {
 
     public void setGross(boolean gross) {
         this.gross = gross;
+    }
+
+    @Override
+    public String toString() {
+        return "Salary{" +
+                "to=" + to +
+                ", from=" + from +
+                ", currency='" + currency + '\'' +
+                '}';
     }
 }

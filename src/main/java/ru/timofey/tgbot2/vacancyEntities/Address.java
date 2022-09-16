@@ -4,7 +4,10 @@ public class Address {
     private String city;
     private String street;
     private String building;
-    public Address(){}
+
+    public Address() {
+    }
+
 
     public Address(String city, String street, String building) {
         this.city = city;
@@ -34,5 +37,14 @@ public class Address {
 
     public void setBuilding(String building) {
         this.building = building;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", building='" + building + '\'' +
+                '}';
     }
 }

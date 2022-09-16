@@ -3,7 +3,9 @@ package ru.timofey.tgbot2.vacancyEntities;
 public class Schedule {
     private String id;
     private String name;
-    public Schedule(){}
+
+    public Schedule() {
+    }
 
     public Schedule(String id, String name) {
         this.id = id;
@@ -24,5 +26,12 @@ public class Schedule {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Schedule{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

@@ -4,7 +4,9 @@ public class Area {
     private String Url;
     private int id;
     private String name;
-    public Area(){}
+
+    public Area() {
+    }
 
     public Area(String url, int id, String name) {
         Url = url;
@@ -34,5 +36,12 @@ public class Area {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Area{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

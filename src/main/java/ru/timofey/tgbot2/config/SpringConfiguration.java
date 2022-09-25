@@ -17,6 +17,7 @@ public class SpringConfiguration {
         this.telegramConfig = telegramConfig;
     }
 
+
     @Bean
     public SetWebhook setWebhookInstance() {
         return SetWebhook.builder().url(telegramConfig.getWebHookPath()).build();
@@ -25,11 +26,11 @@ public class SpringConfiguration {
 
     @Bean
     public Bot webHookBotBean(SetWebhook setWebhook, MessageHandler messageHandler, CallbackQueryHandler callbackQueryHandler) {
-
         Bot bot = new Bot(messageHandler, callbackQueryHandler, setWebhook);
         bot.setBotPath(telegramConfig.getWebHookPath());
         bot.setBotToken(telegramConfig.getBotToken());
         bot.setBotName(telegramConfig.getBotName());
         return bot;
     }
+
 }

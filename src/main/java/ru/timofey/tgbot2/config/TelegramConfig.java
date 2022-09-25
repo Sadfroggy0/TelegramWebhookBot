@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TelegramConfig {
 
-    //https://api.telegram.org/bot1371627210:AAFrSd-euAi05t3TN-Exc-BvC2hLzNQfcWI/setWebhook?url=https://b532-85-143-106-69.eu.ngrok.io
+    //https://api.telegram.org/bot1371627210:AAFrSd-euAi05t3TN-Exc-BvC2hLzNQfcWI/setWebhook?url=https://a465-85-143-106-69.eu.ngrok.io
     @Value("${telegrambot.name}")
     private  String botName;
     @Value("${telegrambot.token}")

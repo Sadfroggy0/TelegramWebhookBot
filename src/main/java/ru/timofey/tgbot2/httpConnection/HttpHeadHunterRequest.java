@@ -1,5 +1,6 @@
 package ru.timofey.tgbot2.httpConnection;
 
+import org.springframework.beans.factory.annotation.Value;
 import ru.timofey.tgbot2.vacancyEntities.HeadHunterForm;
 
 import java.io.BufferedReader;
@@ -11,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HttpHeadHunterRequest {
+
 
     private URL url;
     //gotta be a bean
@@ -28,7 +30,6 @@ public class HttpHeadHunterRequest {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-
         try {
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
